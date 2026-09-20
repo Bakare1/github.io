@@ -1,40 +1,114 @@
 <!DOCTYPE HTML>
-
 <html>
 	<head>
-		<title>PortFolio</title>
+		<title>Bakare Azeez Folawiyo | Full-Stack & Backend Engineer</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		
+		<!-- Dark/Light Theme Custom Styles -->
+		<style>
+			:root {
+				--bg-color: #ffffff;
+				--text-color: #1e2529;
+				--card-bg: #ffffff;
+				--border-color: rgba(0, 0, 0, 0.15);
+			}
+
+			body.dark-mode {
+				--bg-color: #0f172a;
+				--text-color: #f1f5f9;
+				--card-bg: #1e293b;
+				--border-color: rgba(255, 255, 255, 0.1);
+				background-color: var(--bg-color) !important;
+				color: var(--text-color) !important;
+			}
+
+			body.dark-mode #wrapper, 
+			body.dark-mode #main, 
+			body.dark-mode #header, 
+			body.dark-mode #nav, 
+			body.dark-mode #footer,
+			body.dark-mode .post {
+				background-color: var(--card-bg) !important;
+				color: var(--text-color) !important;
+				border-color: var(--border-color) !important;
+			}
+
+			body.dark-mode h1, body.dark-mode h2, body.dark-mode h3, 
+			body.dark-mode p, body.dark-mode b, body.dark-mode a {
+				color: var(--text-color) !important;
+			}
+
+			/* Floating Theme Toggle Switch */
+			.theme-toggle-btn {
+				position: fixed;
+				top: 20px;
+				right: 20px;
+				z-index: 9999;
+				background: #18bfef;
+				color: #ffffff;
+				border: none;
+				padding: 10px 16px;
+				border-radius: 30px;
+				cursor: pointer;
+				font-size: 14px;
+				font-weight: bold;
+				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+				transition: transform 0.2s ease, background-color 0.3s ease;
+			}
+
+			.theme-toggle-btn:hover {
+				transform: scale(1.05);
+			}
+
+			.tech-tag {
+				display: inline-block;
+				background: #18bfef;
+				color: #fff !important;
+				padding: 2px 10px;
+				border-radius: 4px;
+				font-size: 0.75rem;
+				font-weight: bold;
+				margin-right: 5px;
+				margin-bottom: 5px;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
+
+		<!-- Theme Toggle Button -->
+		<button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+			<i id="theme-icon" class="fas fa-moon"></i> <span id="theme-text">Dark Mode</span>
+		</button>
 
 		<!-- Wrapper -->
 			<div id="wrapper" class="fade-in">
 
 				<!-- Intro -->
 					<div id="intro">
-						<h1>My Portfolio</h1>
-						<p>A Showcase Of My Projects and Abilities</p>
+						<h1>BAKARE AZEEZ FOLAWIYO</h1>
+						<p>Full-Stack & Backend Software Engineer<br />
+						Specialized in Java, Spring Boot Microservices, REST APIs & Flutter</p>
 						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Explore Work</a></li>
 						</ul>
 					</div>
 
 				<!-- Header -->
 					<header id="header">
-						<a href="index.html" class="logo">Portfolio</a>
+						<a href="index.html" class="logo">Bakare.dev</a>
 					</header>
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li class="active"><a href="index.html">Home</a></li>
+							<li class="active"><a href="index.html">Portfolio</a></li>
 						</ul>
 						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/engr-folawiyo-azeez-b1595189?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BUVVw37OBSaSahUqc9jm9jQ%3D%3D" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/Bakare1" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.linkedin.com/in/engr-folawiyo-azeez-b1595189" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/Bakare1" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
 						</ul>
 					</nav>
 
@@ -44,101 +118,97 @@
 						<!-- Featured Post -->
 							<article class="post featured">
 								<header class="major">
-									<h2><a href="#">My Name Is Bakare Azeez Folawiyo</h2>
-									<p>I,m a passionate developer but more importantly I'm passionate about Technology</p>
+									<h2><a href="#">Engineered for Scalability & Security</a></h2>
+									<p>5+ years of experience architecting high-performance backend systems, microservices, complex relational/NoSQL database structures, and mobile client applications.</p>
 								</header>
-								<a href="#" class="image main"><img src="https://miro.medium.com/max/10912/1*O3fDiy_86uvPcoAfMIbgNQ.jpeg" alt="" /></a>
+								<a href="#" class="image main"><img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop" alt="Software Engineering Code" /></a>
 								<ul class="actions special">
-									<li><a href="https://github.com/Bakare1" class="button large">Check It Out</a></li>
+									<li><a href="https://github.com/Bakare1" class="button large" target="_blank">View GitHub Profile</a></li>
 								</ul>
 							</article>
 
-						<!-- Posts -->
+						<!-- Projects Grid -->
 							<section class="posts">
+								
+								<!-- Project 1 -->
 								<article>
 									<header>
-										<h2><a href="https://github.com/Bakare1/TransactionFeeCalculator1">Project 1</h2>
+										<h2><a href="https://github.com/Bakare1" target="_blank">E-Commerce Mobile & Backend Suite</a></h2>
 									</header>
-									<a href="https://github.com/Bakare1/TransactionFeeCalculator1" class="image fit"><img src="https://image.shutterstock.com/image-photo/fees-text-displayed-on-calculator-260nw-504448936.jpg" alt="" /></a>
-									<p><b>Transaction fee calculator(DotNet MVC) :</b>
-										A per-transaction fee is an expense a business must pay each time it processes an electronic payment for a customer transaction.
+									<a href="https://github.com/Bakare1" target="_blank" class="image fit"><img src="https://images.unsplash.com/photo-1556742049-0a670f4a4591?q=80&w=600&auto=format&fit=crop" alt="E-Commerce Suite" /></a>
+									<p>
+										<b>Java Spring Boot REST API & Flutter Application:</b> Engineered server-side API for order processing, inventory management, Paystack payment verification callbacks, and automated PDF invoice generation.
 									</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/Bakare1/TransactionFeeCalculator1" class="button">View Code</a></li>
+									<div>
+										<span class="tech-tag">Java</span>
+										<span class="tech-tag">Spring Boot</span>
+										<span class="tech-tag">MongoDB</span>
+										<span class="tech-tag">Flutter</span>
+									</div>
+									<ul class="actions special" style="margin-top: 15px;">
+										<li><a href="https://github.com/Bakare1" target="_blank" class="button">View Source Code</a></li>
 									</ul>
 								</article>
+
+								<!-- Project 2 -->
 								<article>
 									<header>
-										<h2><a href="https://github.com/Bakare1/Rock-Paper-Scissors">Project 2</h2>
+										<h2><a href="https://github.com/Bakare1" target="_blank">OAuth2 Security Microservices</a></h2>
 									</header>
-									<a href="https://github.com/Bakare1/Rock-Paper-Scissors" class="image fit"><img src="https://image.shutterstock.com/image-photo/closeup-hands-making-sign-rock-260nw-483813922.jpg" alt="" /></a>
-									<p><b>Rock Paper Scissors (JavaScript):</b>
-										Rock paper scissors is a hand game usually played between two people, in which each player simultaneously forms one of three shapes with an outstretched hand. These shapes are "rock", "paper", and "scissors".
+									<a href="https://github.com/Bakare1" target="_blank" class="image fit"><img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=600&auto=format&fit=crop" alt="Security Microservices" /></a>
+									<p>
+										<b>Spring Security & Blog Engine:</b> Built token-based authorization microservices implementing Spring Security and JWT authentication with Spring Data MongoDB persistent storage.
 									</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/Bakare1/Rock-Paper-Scissors" class="button">View Code</a></li>
+									<div>
+										<span class="tech-tag">Spring Security</span>
+										<span class="tech-tag">OAuth2</span>
+										<span class="tech-tag">JWT</span>
+										<span class="tech-tag">Maven</span>
+									</div>
+									<ul class="actions special" style="margin-top: 15px;">
+										<li><a href="https://github.com/Bakare1" target="_blank" class="button">View Source Code</a></li>
 									</ul>
 								</article>
+
+								<!-- Project 3 -->
 								<article>
 									<header>
-										<h2><a href="https://github.com/Bakare1/ElibraryManagement">Project 3</h2>
+										<h2><a href="https://github.com/Bakare1/SpringBootSecuredApp" target="_blank">Spring Boot Secured App</a></h2>
 									</header>
-									<a href="https://github.com/Bakare1/ElibraryManagement" class="image fit"><img src="https://image.shutterstock.com/image-photo/ebook-library-concept-laptop-computer-600w-299222171.jpg" alt="" /></a>
-									<p><b>Online ELibrary(DotNet,JavaScript,Bootstrap):</b>
-										A digital library, digital repository, or digital collection, is an online database of digital objects that can include text, still images, audio, video, digital documents, or other digital media formats.							
+									<a href="https://github.com/Bakare1/SpringBootSecuredApp" target="_blank" class="image fit"><img src="https://images.unsplash.com/photo-1510511459019-5dee997dd1db?q=80&w=600&auto=format&fit=crop" alt="SpringBoot Secured App" /></a>
+									<p>
+										<b>Spring Boot, Spring Security & JSP:</b> Full-stack web application featuring user authentication, custom session lifecycle management, Spring Data JPA, and dynamic JSP/JSTL views.
 									</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/Bakare1/ElibraryManagement" class="button">View Code</a></li>
+									<div>
+										<span class="tech-tag">Java</span>
+										<span class="tech-tag">Spring Boot</span>
+										<span class="tech-tag">JSP</span>
+										<span class="tech-tag">MySQL</span>
+									</div>
+									<ul class="actions special" style="margin-top: 15px;">
+										<li><a href="https://github.com/Bakare1/SpringBootSecuredApp" target="_blank" class="button">View Source Code</a></li>
 									</ul>
 								</article>
+
+								<!-- Project 4 -->
 								<article>
 									<header>
-										<h2><a href="https://github.com/Bakare1/BlackJackGame">Project 4</h2>
+										<h2><a href="https://github.com/Bakare1" target="_blank">Hospital Management REST API</a></h2>
 									</header>
-									<a href="https://github.com/Bakare1/BlackJackGame" class="image fit"><img src="https://image.shutterstock.com/image-photo/croupier-behind-gambling-table-casino-600w-605080553.jpg" alt="" /></a>
-									<p><b>BlackJack Game(JavaScript,Bootstrap,Css):</b>
-										Blackjack, formerly also Black Jack and Vingt-Un, is the American member of a global family of banking games known as Twenty-One, whose relatives include Pontoon and Vingt-et-Un. It is a comparing card game between one or more players and a dealer, where each player in turn competes against the dealer.							
+									<a href="https://github.com/Bakare1" target="_blank" class="image fit"><img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=600&auto=format&fit=crop" alt="Hospital Management System" /></a>
+									<p>
+										<b>Spring Boot & Swagger Documentation:</b> Healthcare portal API for medical records and appointments featuring relational schema modeling with Spring Data JPA and MySQL.
 									</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/Bakare1/BlackJackGame" class="button">View Code</a></li>
+									<div>
+										<span class="tech-tag">Spring Data JPA</span>
+										<span class="tech-tag">MySQL</span>
+										<span class="tech-tag">Swagger UI</span>
+									</div>
+									<ul class="actions special" style="margin-top: 15px;">
+										<li><a href="https://github.com/Bakare1" target="_blank" class="button">View Source Code</a></li>
 									</ul>
 								</article>
-								<article>
-									<header>
-										<h2><a href="https://github.com/Bakare1/HospitalManagement">Project 5</h2>
-									</header>
-									<a href="https://github.com/Bakare1/HospitalManagement" class="image fit"><img src="https://miro.medium.com/max/800/1*cq2-hwx8Cev0eXpaW6CIHg.jpeg" alt="" /></a>
-									<p><b>Hospital Management(C#):</b>
-										 Hospital Management is a term very broad in scope and may be defined from different aspects. It mainly relates to management of all aspects of a hospital; a coordination of all elements of a hospital. This may range from patient care to record keeping to inventory of medicines and cleanliness.							
-									</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/Bakare1/HospitalManagement" class="button">View Code</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2><a href="https://github.com/Bakare1/HotelReservation">Project 6</h2>
-									</header>
-									<a href="https://github.com/Bakare1/HotelReservation" class="image fit"><img src="https://i.pinimg.com/originals/a0/73/a0/a073a07c1d47a9715012c141c857ef63.jpg" alt="" /></a>
-									<p><b>Hotel Resevation(C#):</b>
-										 A hotel reservation system works by processing secure online reservations made through a hotel's website. The data is then passed onto a backend system which can be accessed by hotels to manage bookings.To sell rooms to capacity and to appeal to a global audience, a hotel reservation system is required.							
-									</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/Bakare1/HotelReservation" class="button">View Code</a></li>
-									</ul>
-								</article>
-									<article>
-									<header>
-										<h2><a href="https://github.com/Bakare1/NetFlix-Clone">Project 7</h2>
-									</header>
-									<a href="https://github.com/Bakare1/NetFlix-Clone" class="image fit"><img src="https://i.pcmag.com/imagery/reviews/05cItXL96l4LE9n02WfDR0h-5.fit_scale.size_1028x578.v1582751026.png" alt="" /></a>
-									<p><b>NetFlix-Clone(REACT,FIREBASE):</b>
-										Netflix is a subscription-based streaming service that allows our members to watch TV shows and movies without commercials on an internet-connected device. You can also download TV shows and movies to your iOS, Android, or Windows 10 device and watch without an internet connection.					
-									</p>
-									<ul class="actions special">
-										<li><a href="https://netflix-clone-4973d.web.app/" class="button">View Site</a></li>
-									</ul>
-								</article>
+
 							</section>
 					</div>
 
@@ -146,22 +216,22 @@
 					<footer id="footer">
 						<section class="split contact">
 							<section class="alt">
-								<h3>Address</h3>
-								<p>Lagos,Nigeria</p>
+								<h3>Location</h3>
+								<p>Lagos, Nigeria</p>
 							</section>
 							<section>
 								<h3>Phone</h3>
-								<p><a href="#">(+234) 000-0000</a></p>
+								<p><a href="tel:+2348138105038">(+234) 813 810 5038</a></p>
 							</section>
 							<section>
 								<h3>Email</h3>
-								<p><a href="folawiyoazeez@gmail.com">Email.com</a></p>
+								<p><a href="mailto:folawiyoazeez@gmail.com">folawiyoazeez@gmail.com</a></p>
 							</section>
 							<section>
 								<h3>Social</h3>
 								<ul class="icons alt">
-									<li><a href="https://www.linkedin.com/in/engr-folawiyo-azeez-b1595189?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BUVVw37OBSaSahUqc9jm9jQ%3D%3D" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<li><a href="https://github.com/Bakare1" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://www.linkedin.com/in/engr-folawiyo-azeez-b1595189" class="icon brands alt fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/Bakare1" class="icon brands alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
 								</ul>
 							</section>
 						</section>
@@ -169,7 +239,7 @@
 
 				<!-- Copyright -->
 					<div id="copyright">
-						<ul><li>&copy;Bakare.A.Folawiyo</li><li>Design: <a href="#">Biggy Bakare</a></li></ul>
+						<ul><li>&copy; Bakare Azeez Folawiyo</li><li>Design Adaptation: Bakare.dev</li></ul>
 					</div>
 
 			</div>
@@ -182,6 +252,36 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+		<!-- Theme Switcher Logic -->
+			<script>
+				const themeToggleBtn = document.getElementById('theme-toggle');
+				const themeIcon = document.getElementById('theme-icon');
+				const themeText = document.getElementById('theme-text');
+
+				// Check for saved user preference, otherwise check system preference
+				const savedTheme = localStorage.getItem('theme');
+				if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+					document.body.classList.add('dark-mode');
+					themeIcon.className = 'fas fa-sun';
+					themeText.textContent = 'Light Mode';
+				}
+
+				themeToggleBtn.addEventListener('click', () => {
+					document.body.classList.toggle('dark-mode');
+					const isDarkMode = document.body.classList.contains('dark-mode');
+
+					if (isDarkMode) {
+						themeIcon.className = 'fas fa-sun';
+						themeText.textContent = 'Light Mode';
+						localStorage.setItem('theme', 'dark');
+					} else {
+						themeIcon.className = 'fas fa-moon';
+						themeText.textContent = 'Dark Mode';
+						localStorage.setItem('theme', 'light');
+					}
+				});
+			</script>
 
 	</body>
 </html>
